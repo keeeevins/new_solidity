@@ -1,3 +1,4 @@
+//syntax
 pragma solidity 0.8.19;
 
 contract Helloworld{
@@ -45,3 +46,11 @@ contract AccessControl {
         require(msg.sender == kingaddress , " ur not my load");
     }
 }
+
+contract AccessControls {
+    address public  kingaddress = 0xf49d463576bcF2bB97239DEbdbF3e97B7cBCA7b9;
+    function somefunction() external {
+        require(msg.sender == kingaddress , " ur not my load");
+    }
+}
+
